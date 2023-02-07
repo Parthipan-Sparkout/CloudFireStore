@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0CF898299251B500FAA896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF897299251B500FAA896 /* AppDelegate.swift */; };
+		5A0CF89A299251B500FAA896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF899299251B500FAA896 /* SceneDelegate.swift */; };
+		5A0CF89C299251B500FAA896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF89B299251B500FAA896 /* ViewController.swift */; };
+		5A0CF89F299251B500FAA896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0CF89D299251B500FAA896 /* Main.storyboard */; };
+		5A0CF8A1299251B700FAA896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0CF8A0299251B700FAA896 /* Assets.xcassets */; };
+		5A0CF8A4299251B700FAA896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0CF8A2299251B700FAA896 /* LaunchScreen.storyboard */; };
+		5A0CF8AF299251B800FAA896 /* CloudFirestoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8AE299251B800FAA896 /* CloudFirestoreTests.swift */; };
+		5A0CF8B9299251B800FAA896 /* CloudFirestoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8B8299251B800FAA896 /* CloudFirestoreUITests.swift */; };
+		5A0CF8BB299251B800FAA896 /* CloudFirestoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8BA299251B800FAA896 /* CloudFirestoreUITestsLaunchTests.swift */; };
+		5A0CF8C92992534D00FAA896 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8C82992534D00FAA896 /* FirebaseAnalytics */; };
+		5A0CF8CB2992534D00FAA896 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8CA2992534D00FAA896 /* FirebaseAnalyticsSwift */; };
+		5A0CF8CD2992534D00FAA896 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8CC2992534D00FAA896 /* FirebaseFirestore */; };
+		5A0CF8CF2992534D00FAA896 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8CE2992534D00FAA896 /* FirebaseFirestoreCombine-Community */; };
+		5A0CF8D12992534D00FAA896 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8D02992534D00FAA896 /* FirebaseFirestoreSwift */; };
+		5A0CF8D32992534D00FAA896 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0CF8D22992534D00FAA896 /* FirebaseFunctions */; };
+		5A0CF8D629925BA100FAA896 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8D429925BA100FAA896 /* UserTableViewCell.swift */; };
+		5A0CF8D729925BA100FAA896 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0CF8D529925BA100FAA896 /* UserTableViewCell.xib */; };
+		5A0CF8D929925BF600FAA896 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8D829925BF600FAA896 /* AddUserViewController.swift */; };
+		5A0CF8DB2992672B00FAA896 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A0CF8DA2992672B00FAA896 /* GoogleService-Info.plist */; };
+		5A0CF8DD2992769400FAA896 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0CF8DC2992769400FAA896 /* UIViewController+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A0CF8AB299251B800FAA896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A0CF88C299251B500FAA896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A0CF893299251B500FAA896;
+			remoteInfo = CloudFirestore;
+		};
+		5A0CF8B5299251B800FAA896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A0CF88C299251B500FAA896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A0CF893299251B500FAA896;
+			remoteInfo = CloudFirestore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A0CF894299251B500FAA896 /* CloudFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0CF897299251B500FAA896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A0CF899299251B500FAA896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A0CF89B299251B500FAA896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A0CF89E299251B500FAA896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A0CF8A0299251B700FAA896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A0CF8A3299251B700FAA896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A0CF8A5299251B700FAA896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0CF8AA299251B800FAA896 /* CloudFirestoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudFirestoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0CF8AE299251B800FAA896 /* CloudFirestoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFirestoreTests.swift; sourceTree = "<group>"; };
+		5A0CF8B4299251B800FAA896 /* CloudFirestoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudFirestoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0CF8B8299251B800FAA896 /* CloudFirestoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFirestoreUITests.swift; sourceTree = "<group>"; };
+		5A0CF8BA299251B800FAA896 /* CloudFirestoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFirestoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A0CF8D429925BA100FAA896 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		5A0CF8D529925BA100FAA896 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		5A0CF8D829925BF600FAA896 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		5A0CF8DA2992672B00FAA896 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A0CF8DC2992769400FAA896 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A0CF891299251B500FAA896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0CF8D12992534D00FAA896 /* FirebaseFirestoreSwift in Frameworks */,
+				5A0CF8CB2992534D00FAA896 /* FirebaseAnalyticsSwift in Frameworks */,
+				5A0CF8CF2992534D00FAA896 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				5A0CF8D32992534D00FAA896 /* FirebaseFunctions in Frameworks */,
+				5A0CF8C92992534D00FAA896 /* FirebaseAnalytics in Frameworks */,
+				5A0CF8CD2992534D00FAA896 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8A7299251B800FAA896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8B1299251B800FAA896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A0CF88B299251B500FAA896 = {
+			isa = PBXGroup;
+			children = (
+				5A0CF896299251B500FAA896 /* CloudFirestore */,
+				5A0CF8AD299251B800FAA896 /* CloudFirestoreTests */,
+				5A0CF8B7299251B800FAA896 /* CloudFirestoreUITests */,
+				5A0CF895299251B500FAA896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A0CF895299251B500FAA896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A0CF894299251B500FAA896 /* CloudFirestore.app */,
+				5A0CF8AA299251B800FAA896 /* CloudFirestoreTests.xctest */,
+				5A0CF8B4299251B800FAA896 /* CloudFirestoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A0CF896299251B500FAA896 /* CloudFirestore */ = {
+			isa = PBXGroup;
+			children = (
+				5A0CF897299251B500FAA896 /* AppDelegate.swift */,
+				5A0CF899299251B500FAA896 /* SceneDelegate.swift */,
+				5A0CF89B299251B500FAA896 /* ViewController.swift */,
+				5A0CF8DC2992769400FAA896 /* UIViewController+Extension.swift */,
+				5A0CF8D829925BF600FAA896 /* AddUserViewController.swift */,
+				5A0CF8D529925BA100FAA896 /* UserTableViewCell.xib */,
+				5A0CF8D429925BA100FAA896 /* UserTableViewCell.swift */,
+				5A0CF8DA2992672B00FAA896 /* GoogleService-Info.plist */,
+				5A0CF89D299251B500FAA896 /* Main.storyboard */,
+				5A0CF8A0299251B700FAA896 /* Assets.xcassets */,
+				5A0CF8A2299251B700FAA896 /* LaunchScreen.storyboard */,
+				5A0CF8A5299251B700FAA896 /* Info.plist */,
+			);
+			path = CloudFirestore;
+			sourceTree = "<group>";
+		};
+		5A0CF8AD299251B800FAA896 /* CloudFirestoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A0CF8AE299251B800FAA896 /* CloudFirestoreTests.swift */,
+			);
+			path = CloudFirestoreTests;
+			sourceTree = "<group>";
+		};
+		5A0CF8B7299251B800FAA896 /* CloudFirestoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A0CF8B8299251B800FAA896 /* CloudFirestoreUITests.swift */,
+				5A0CF8BA299251B800FAA896 /* CloudFirestoreUITestsLaunchTests.swift */,
+			);
+			path = CloudFirestoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0CF893299251B500FAA896 /* CloudFirestore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0CF8BE299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestore" */;
+			buildPhases = (
+				5A0CF890299251B500FAA896 /* Sources */,
+				5A0CF891299251B500FAA896 /* Frameworks */,
+				5A0CF892299251B500FAA896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudFirestore;
+			packageProductDependencies = (
+				5A0CF8C82992534D00FAA896 /* FirebaseAnalytics */,
+				5A0CF8CA2992534D00FAA896 /* FirebaseAnalyticsSwift */,
+				5A0CF8CC2992534D00FAA896 /* FirebaseFirestore */,
+				5A0CF8CE2992534D00FAA896 /* FirebaseFirestoreCombine-Community */,
+				5A0CF8D02992534D00FAA896 /* FirebaseFirestoreSwift */,
+				5A0CF8D22992534D00FAA896 /* FirebaseFunctions */,
+			);
+			productName = CloudFirestore;
+			productReference = 5A0CF894299251B500FAA896 /* CloudFirestore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A0CF8A9299251B800FAA896 /* CloudFirestoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0CF8C1299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestoreTests" */;
+			buildPhases = (
+				5A0CF8A6299251B800FAA896 /* Sources */,
+				5A0CF8A7299251B800FAA896 /* Frameworks */,
+				5A0CF8A8299251B800FAA896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A0CF8AC299251B800FAA896 /* PBXTargetDependency */,
+			);
+			name = CloudFirestoreTests;
+			productName = CloudFirestoreTests;
+			productReference = 5A0CF8AA299251B800FAA896 /* CloudFirestoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A0CF8B3299251B800FAA896 /* CloudFirestoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0CF8C4299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestoreUITests" */;
+			buildPhases = (
+				5A0CF8B0299251B800FAA896 /* Sources */,
+				5A0CF8B1299251B800FAA896 /* Frameworks */,
+				5A0CF8B2299251B800FAA896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A0CF8B6299251B800FAA896 /* PBXTargetDependency */,
+			);
+			name = CloudFirestoreUITests;
+			productName = CloudFirestoreUITests;
+			productReference = 5A0CF8B4299251B800FAA896 /* CloudFirestoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A0CF88C299251B500FAA896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5A0CF893299251B500FAA896 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5A0CF8A9299251B800FAA896 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5A0CF893299251B500FAA896;
+					};
+					5A0CF8B3299251B800FAA896 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5A0CF893299251B500FAA896;
+					};
+				};
+			};
+			buildConfigurationList = 5A0CF88F299251B500FAA896 /* Build configuration list for PBXProject "CloudFirestore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A0CF88B299251B500FAA896;
+			packageReferences = (
+				5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 5A0CF895299251B500FAA896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0CF893299251B500FAA896 /* CloudFirestore */,
+				5A0CF8A9299251B800FAA896 /* CloudFirestoreTests */,
+				5A0CF8B3299251B800FAA896 /* CloudFirestoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A0CF892299251B500FAA896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0CF8D729925BA100FAA896 /* UserTableViewCell.xib in Resources */,
+				5A0CF8A4299251B700FAA896 /* LaunchScreen.storyboard in Resources */,
+				5A0CF8A1299251B700FAA896 /* Assets.xcassets in Resources */,
+				5A0CF89F299251B500FAA896 /* Main.storyboard in Resources */,
+				5A0CF8DB2992672B00FAA896 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8A8299251B800FAA896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8B2299251B800FAA896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A0CF890299251B500FAA896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0CF8DD2992769400FAA896 /* UIViewController+Extension.swift in Sources */,
+				5A0CF8D929925BF600FAA896 /* AddUserViewController.swift in Sources */,
+				5A0CF8D629925BA100FAA896 /* UserTableViewCell.swift in Sources */,
+				5A0CF89C299251B500FAA896 /* ViewController.swift in Sources */,
+				5A0CF898299251B500FAA896 /* AppDelegate.swift in Sources */,
+				5A0CF89A299251B500FAA896 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8A6299251B800FAA896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0CF8AF299251B800FAA896 /* CloudFirestoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0CF8B0299251B800FAA896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0CF8BB299251B800FAA896 /* CloudFirestoreUITestsLaunchTests.swift in Sources */,
+				5A0CF8B9299251B800FAA896 /* CloudFirestoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A0CF8AC299251B800FAA896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A0CF893299251B500FAA896 /* CloudFirestore */;
+			targetProxy = 5A0CF8AB299251B800FAA896 /* PBXContainerItemProxy */;
+		};
+		5A0CF8B6299251B800FAA896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A0CF893299251B500FAA896 /* CloudFirestore */;
+			targetProxy = 5A0CF8B5299251B800FAA896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A0CF89D299251B500FAA896 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0CF89E299251B500FAA896 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A0CF8A2299251B700FAA896 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0CF8A3299251B700FAA896 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A0CF8BC299251B800FAA896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A0CF8BD299251B800FAA896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A0CF8BF299251B800FAA896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudFirestore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A0CF8C0299251B800FAA896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudFirestore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A0CF8C2299251B800FAA896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudFirestore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CloudFirestore";
+			};
+			name = Debug;
+		};
+		5A0CF8C3299251B800FAA896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudFirestore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CloudFirestore";
+			};
+			name = Release;
+		};
+		5A0CF8C5299251B800FAA896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudFirestore;
+			};
+			name = Debug;
+		};
+		5A0CF8C6299251B800FAA896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.CloudFirestoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudFirestore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A0CF88F299251B500FAA896 /* Build configuration list for PBXProject "CloudFirestore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0CF8BC299251B800FAA896 /* Debug */,
+				5A0CF8BD299251B800FAA896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0CF8BE299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0CF8BF299251B800FAA896 /* Debug */,
+				5A0CF8C0299251B800FAA896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0CF8C1299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0CF8C2299251B800FAA896 /* Debug */,
+				5A0CF8C3299251B800FAA896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0CF8C4299251B800FAA896 /* Build configuration list for PBXNativeTarget "CloudFirestoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0CF8C5299251B800FAA896 /* Debug */,
+				5A0CF8C6299251B800FAA896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A0CF8C82992534D00FAA896 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5A0CF8CA2992534D00FAA896 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		5A0CF8CC2992534D00FAA896 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5A0CF8CE2992534D00FAA896 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		5A0CF8D02992534D00FAA896 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5A0CF8D22992534D00FAA896 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0CF8C72992534D00FAA896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5A0CF88C299251B500FAA896 /* Project object */;
+}
