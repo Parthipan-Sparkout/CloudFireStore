@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class UserTableViewCell: UITableViewCell {
     
@@ -16,8 +17,16 @@ class UserTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
+        userImageView.layer.masksToBounds = true
+        userImageView.clipsToBounds = true
     }
 
+    func configureCell(data: [String: Any]) {
+        userImageView.image = UIImage(named: "placeholder")
+        userName.text = data["userName"] as? String ?? ""
+        userDesignation.text = "Reg ID : " + (data["employeeID"] as? String ?? "")
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

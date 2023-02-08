@@ -17,13 +17,17 @@ class AddUserViewController: UIViewController {
     let db = Firestore.firestore()
     var ref: DocumentReference? = nil
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         addButton.addTarget(self, action: #selector(addAction), for: .touchUpInside)
-        
+        userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
+        userImageView.clipsToBounds = true
+          
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openGallery))
+        userImageView.addGestureRecognizer(tapGesture)
+        userImageView.isUserInteractionEnabled = true
     }
     
     @objc func addAction() {
@@ -36,6 +40,12 @@ class AddUserViewController: UIViewController {
             return
         }
         
+        let docRef = db.document("Users/Employee")
+        docRef.setData([
+            "employeeID": employeeId,
+            "userName": userName,
+        ])
+        
         ref = db.collection("users").addDocument(data: [
             "employeeID": employeeId,
             "userName": userName,
@@ -46,8 +56,10 @@ class AddUserViewController: UIViewController {
                 print("Document added with ID: \(self.ref!.documentID)")
             }
         }
-
-        
+    }
+    
+    @objc func openGallery() {
+        print("open gallery")
     }
     
 
