@@ -23,7 +23,11 @@ class UserTableViewCell: UITableViewCell {
     }
 
     func configureCell(data: [String: Any]) {
-        userImageView.image = UIImage(named: "placeholder")
+        if data["imageData"] != nil {
+            userImageView.image = UIImage(data: data["imageData"] as? Data ?? Data())
+        } else {
+            userImageView.image = UIImage(named: "placeholder")
+        }
         userName.text = data["userName"] as? String ?? ""
         userDesignation.text = "Reg ID : " + (data["employeeID"] as? String ?? "")
     }
